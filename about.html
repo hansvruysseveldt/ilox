@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ILOX — About</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><img src="assets/ilox_logo.png" alt="ILOX logo" width="140" height="50" /></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="cta" href="contact.html">Get in touch</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>About ILOX</h1>
+            <p>Founded to provide pragmatic engineering and product-first thinking. Replace this paragraph with the real company history, mission and values.</p>
+
+            <h2>Our approach</h2>
+            <ul>
+                <li>Close collaboration with customers</li>
+                <li>Incremental delivery and feedback loops</li>
+                <li>Quality and maintainability first</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year2"></span> ILOX. Leuvensevoetweg 5, 3370 Boutersem, BTW BE0883.560.330 - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ILOX — Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><img src="assets/ilox_logo.png" alt="ILOX logo" width="140" height="50" /></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="cta" href="contact.html">Get in touch</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container contact-form">
+            <h1>Contact us</h1>
+            <p>Send us a message and we'll respond as soon as possible.</p>
+            <form action="#" method="post" onsubmit="alert('This is a static template — wire a backend to send messages.'); return false;">
+                <label>
+                    Name
+                    <input type="text" name="name" required />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required />
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="6" required></textarea>
+                </label>
+                <p><button class="btn" type="submit">Send message</button></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year3"></span> ILOX. Leuvensevoetweg 5, 3370 Boutersem, BTW BE0883.560.330 - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
